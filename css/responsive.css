@@ -1,0 +1,318 @@
+@media screen and (max-width: 1500px){
+    .hero-video {
+        top: 18%;
+        right: 25%;
+        position: absolute;
+    }
+
+}
+@media screen and (max-width: 1280px){
+    .hero-tex h1{
+        font-size: 120px;
+        line-height: 110px;
+    }
+    .test-left{
+        width: 40%;
+    }
+    .slider{
+        margin-bottom: 370px;
+    }
+    .testmonail-content{
+        width: 80%;
+    }
+    
+
+}
+@media screen and (max-width: 1064px){
+    .hero-video {
+        top: 18%;
+        right: 18%;
+    }
+    .hero-tex h1{
+        font-size: 100px;
+        line-height: 90px;
+    }
+    .service-box{
+        padding: 30px 14px;
+    }
+}
+@media screen and (max-width: 991px){
+    .carousel-container{
+        margin-top: 100px;
+    }
+    .hero-bottom-text p{
+        font-size: 18px;
+    }
+    .scrool-brand{
+        max-width: 250px;
+    }
+    .left-title {
+        width: 50%;
+    }
+    .right-title{
+        width: 40%;
+    }
+    .service-box{
+        padding: 40px;
+        text-align: center;
+    }
+    .mata-box{
+        padding: 40px;
+        margin-bottom: 30px;
+    }
+    .footer-link{
+        padding-left: 0;
+        padding-bottom: 30px;
+    }
+    .footer-logo{
+        margin-bottom: 30px;
+    }
+    footer{
+        padding-bottom: 30px;
+    }
+    .nav-item{
+        padding-left: 0;
+        padding-top: 20px;
+    }
+    .mission-content {
+
+        left: 20px;
+        width: calc(100% - 40px);
+    }
+    
+}
+@media screen and (max-width: 890px){
+    .hero-video {
+        top: 18%;
+        right: 12%;
+    }
+}
+@media screen and (max-width: 864px){
+    .hero-tex h1{
+        font-size: 90px;
+        line-height: 80px;
+    }
+    .video-section{
+        width: 320px;
+    }
+}
+@media screen and (max-width: 787px){
+    .hero-content{
+        padding-top: 150px;
+        flex-direction: column;
+    }
+    .hero-bottom-text{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .hero-tex{
+        text-align: center;
+    }
+    #text-loop{
+        padding-left: 0;
+    }
+    .hero-video{
+        top:38%;
+        right: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    .testmonail-container{
+        flex-direction: column;
+    }
+    .test-left{
+        text-align: center;
+        width: 100%;
+    }
+    .test-left h2{
+        margin-bottom: 10px;
+    }
+    .test-right{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .slider {
+        margin-bottom: 440px;
+    }
+    .service-title{
+        position: relative;
+        flex-direction: column;
+    }
+    .left-title{
+        text-align: center;
+        width: 100%;
+    }
+    .right-title{
+        text-align: center;
+        width: 100%;
+        padding-left: 20px;
+    }
+    .right-title img{
+        position: absolute;
+        top: -100px;
+        left: 49%;
+        transform: translate(-50% , 0);
+    }
+    .service{
+        padding: 130px 0 60px;
+    }
+    .mission-box{
+        width: 100%;
+        margin-bottom: 30px;
+        height: 400px;
+    }
+    .mission-container{
+        flex-direction: column;
+    }
+    .about{
+        padding: 60px 0;
+    }
+    .values{
+        padding: 60px 0;
+    }
+    
+}
+@media screen and (max-width: 650px){
+    .hero-tex h1 {
+        font-size: 70px;
+        line-height: 60px;
+    }
+    .hero-img {
+        width: 100%;
+    }
+    .scrool-brand {
+        min-width: 40%;
+        width:40%;
+        text-align: center;
+    }
+    .service-brand h2 {
+        font-size: 25px;
+        color: #edecec;
+    }
+    .service-going{
+        padding: 60px 0;
+    }
+    .left-title h2{
+        font-size: 50px;
+    }
+    .test-left h2{
+        font-size: 50px;
+    }
+    .right-title img {
+        position: absolute;
+        top: -100px;
+        left: 43%;
+        transform: translate(-50%, 0);
+    }
+    .why-chose {
+        margin-top: 50px;
+    }
+    .why-chose h2{
+        font-size: 50px;
+    }
+    .about h2{
+        font-size: 50px;
+    }
+    .values h2 {
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
+    .testmonail-content {
+        width: 90%;
+        margin-left: auto;
+    }
+    .quto {
+        position: absolute;
+        left: -35px;
+        top: -11px;
+    }
+    .scrool-brand{
+        width: 50%;
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 485px){
+    .hero-tex h1 {
+        font-size: 60px;
+        line-height: 50px;
+    }
+    .hero-video {
+        left: 46%;
+        transform: translate(-50%, 0);
+    }
+    .test-left h2{
+        font-size: 50px;
+    }
+    .testmonail{
+        padding: 50px 0;
+    }
+    .slider {
+        margin-bottom: 337px;
+    }
+    
+    .service-brand h2 {
+        font-size: 20px;
+        color: #edecec;
+    }
+}
+@media screen and (max-width: 448px){
+    .hero-video{
+        top: 32%;
+    }
+    .hero-video {
+        left: 43%;
+        transform: translate(-50%, 0);
+    }
+    .values h2{
+        font-size: 40px;
+    }
+    .values h2 img{
+        margin-top:30px;
+    }
+}
+@media screen and (max-width: 409px){
+    .hero-tex h1{
+        font-size: 45px;
+        line-height: 35px;
+    }
+    .hero-video {
+        top: 30%;
+        left: 40%;
+        transform: translate(-50%, 0);
+    }
+    .quto {
+        left: -34px;
+    }
+    .carousel-container {
+        margin-top: 29px;
+    }
+    
+    
+}
+@media screen and (max-width: 371px){
+    .hero-video {
+        top: 30%;
+        left: 37%;
+        transform: translate(-50%, 0);
+    }
+    .test-left h2 {
+        font-size: 40px;
+    }
+    .left-title h2{
+        font-size: 40px;
+    }
+    .mata-box h3 {
+        font-size: 29px;
+        margin: 12px 0;
+    }
+    .why-chose h2 {
+        font-size: 40px;
+    }
+    .about h2 {
+        font-size: 40px;
+    }
+    .values h2 {
+        font-size: 35px;
+    }
+}

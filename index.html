@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Engagemint</title>
+	<!-- Main Style Sheet -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+	<!-- Bootstrap -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<!-- google Font  -->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap"
+		rel="stylesheet">
+	<!-- Font awesome -->
+	<script src="https://kit.fontawesome.com/b2b7d27ef0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+	<section id="navbar">
+		<nav class="navbar navbar-expand-lg">
+			<div class="container">
+				<a class="navbar-brand" href="index.html"> <img src="images/logo.svg" alt=""> </a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav">
+
+						<li class="nav-item">
+							<a href="index.html">Home</a>
+						</li>
+
+						<li class="nav-item">
+							<a href="#skill">ABOUT US</a>
+						</li>
+
+						<li class="nav-item">
+							<a href="#destianation-main">Portfolios</a>
+						</li>
+
+						<li class="nav-item">
+							<a href="#prefer-main">Services</a>
+						</li>
+
+
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</section>
+	<section class="hero">
+		<div class="container">
+			<div class="hero-tex">
+				<h1>Creative</h1>
+				<h1><span id="text-loop">Digital Agency</span></h1>
+			</div>
+			<div class="hero-bottom">
+				<div class="hero-content">
+					<div class="hero-bottom-text">
+						<p>Crafting impactful digital strategies that drive engagement, growth, and brand loyalty across
+							every platform.</p>
+						<div class="gobal-btn">
+							<a href="#">Get Started <i class="fa-solid fa-circle-arrow-right"></i></a>
+						</div>
+					</div>
+					<div class="hero-img">
+						<img src="images/hero-img.png" alt="">
+					</div>
+				</div>
+
+			</div>
+			<div class="hero-video">
+				<div class="video-section">
+					<div class="video-thumbnail" onclick="playVideo()">
+					  <video 
+						class="video-bg" 
+						muted 
+						autoplay 
+						loop 
+						playsinline 
+						webkit-playsinline>
+						<source src="images/hero-video.mp4" type="video/mp4" />
+						Your browser does not support the video tag.
+					  </video>
+					  <div class="play-button">
+						<img src="images/play.png" alt="Play Button" />
+					  </div>
+					</div>
+				  
+					<div class="custom-video-container" style="display: none;">
+					  <video id="mainVideo" class="full-video" playsinline webkit-playsinline  >
+						<source src="images/hero-video.mp4" type="video/mp4" />
+						Your browser does not support the video tag.
+					  </video>
+					  
+					</div>
+				  </div>
+				  
+				  
+			</div>
+		</div>
+	</section>
+
+	<section class="testmonail">
+		<div class="container">
+			<div class="testmonail-container">
+				<div class="test-left">
+					<h2>Our Clients</h2>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit
+						esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+						occaecat cupidatat non proident.</p>
+				</div>
+				<div class="test-right">
+					<div class="slider-container">
+						<div class="slider">
+						  <div class="slide active">
+							<div class="testmonail-content">
+								<div class="quto">
+									<img src="images/quto.png" alt="">
+								</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing
+									elit, sed do eiusmod tempor incididunt ut labore et
+									dolore magna aliqua. Ut enim ad minim veniam, quis
+									nostrud exercitation ullamco laboris nisi ut aliquip ex
+									ea commodo consequat.</p>
+								<div class="test-person">
+									<img src="images/man1.png" alt="">
+									<p>Mike Lewis  - </p>
+									<span>Twitter</span>
+								</div>	
+							</div>
+						  </div>
+						  <div class="slide">
+							<div class="testmonail-content">
+								<div class="quto">
+									<img src="images/quto.png" alt="">
+								</div>
+
+
+								<div class="testimonial-video">
+									<div class="testimonial-video-thumbnail">
+									  <video 
+										class="testimonial-video-bg" 
+										muted 
+										autoplay 
+										loop 
+										playsinline 
+										webkit-playsinline>
+										<source src="images/hero-video.mp4" type="video/mp4" />
+										Your browser does not support the video tag.
+									  </video>
+									  <div class="testimonial-play-button">
+										<img src="images/green-play.png" alt="Play Button" />
+									  </div>
+									</div>
+								  
+									<div class="testimonial-video-container">
+									  <video class="testimonial-full-video" playsinline webkit-playsinline>
+										<source src="images/hero-video.mp4" type="video/mp4" />
+										Your browser does not support the video tag.
+									  </video>
+									  
+									</div>
+								  </div>
+
+								
+								<div class="test-person">
+									<img src="images/man1.png" alt="">
+									<p>Steven Smith</p>
+									
+								</div>	
+							</div>
+						  </div>
+						  
+						</div>
+						<div class="custom-nav">
+						  <img src="images/pre.png" alt="Previous" id="prev">
+						  <img src="images/next.png" alt="Next" id="next">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="carousel-container">
+				<div class="carousel-track">
+					<!-- Add your logos here -->
+					<div class="partner-logo"><img src="images/logo-company/1.png" alt=""></div>
+					<div class="partner-logo"><img src="images/logo-company/2.png" alt=""></div>
+					<div class="partner-logo"><img src="images/logo-company/3.png" alt=""></div>
+					<div class="partner-logo"><img src="images/logo-company/4.png" alt=""></div>
+					<div class="partner-logo"><img src="images/logo-company/5.png" alt=""></div>
+					<div class="partner-logo"><img src="images/logo-company/1.png" alt=""></div>
+					<div class="partner-logo"><img src="images/logo-company/2.png" alt=""></div>
+					<div class="partner-logo"><img src="images/logo-company/4.png" alt=""></div>
+					<div class="partner-logo"><img src="images/logo-company/5.png" alt=""></div>
+					<div class="partner-logo"><img src="images/logo-company/1.png" alt=""></div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="service-going">
+		<div class="carousel-container">
+			<div class="carousel-track service-brand">
+				<!-- Add your logos here -->
+				<div class="scrool-brand">
+					<h2>Website</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Socail Media</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Graphic Design</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Branding</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Socail Media</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Graphic Design</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Branding</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Website</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Socail Media</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Graphic Design</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Branding</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Socail Media</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Graphic Design</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Branding</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Website</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Socail Media</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Graphic Design</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Branding</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Socail Media</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Graphic Design</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Branding</h2>
+				</div>
+
+			</div>
+		</div>
+		<div class="layer-bluer">
+			<img src="images/layer-blur.png" alt="">
+		</div>
+		<div class="right-bluer">
+			<img src="images/layer-blur.png" alt="">
+		</div>
+	</section>
+
+	<section class="service">
+		<div class="container">
+			<div class="service-title">
+				<div class="left-title">
+					<h2>Digital Services</h2>
+				</div>
+				<div class="right-title">
+					<img src="images/leaf.png" alt="">
+					<p>Duis aute irure dolor in reprehenderit in
+						voluptate velit esse cillum dolore eu fugiat
+						nulla pariatur.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 mar-b-30">
+					<div class="service-box s-border1">
+						<img src="images/meta.png" alt="">
+						<h3>Meta Advertising (Facebook & Instagram)</h3>
+						<p>Want to reach your ideal customers where they hang out? We'll create eye-catching ads on
+							Facebook and Instagram that engage and convert.</p>
+
+					</div>
+				</div>
+				<div class="col-lg-3 mar-b-30">
+					<div class="service-box s-border2">
+						<img src="images/google.png" alt="">
+						<h3>Google<br>
+							Advertising</h3>
+						<p>Lorem ipsum dolor sit amet,
+							consectetur adipiscing elit. Mauris
+							tempus nisl vitae magna pulvinar
+							laoreet.</p>
+
+					</div>
+				</div>
+				<div class="col-lg-3 mar-b-30">
+					<div class="service-box s-border2">
+						<img src="images/amazon.png" alt="">
+						<h3>Amazon<br>
+							Advertising</h3>
+						<p>Lorem ipsum dolor sit amet,
+							consectetur adipiscing elit. Mauris
+							tempus nisl vitae magna pulvinar
+							laoreet.</p>
+
+					</div>
+				</div>
+				<div class="col-lg-3 mar-b-30">
+					<div class="service-box s-border2">
+						<img src="images/amazon.png" alt="">
+						<h3>Branding</h3>
+						<p>Lorem ipsum dolor sit amet,
+							consectetur adipiscing elit. Mauris
+							tempus nisl vitae magna pulvinar
+							laoreet.</p>
+
+					</div>
+				</div>
+
+			</div>
+			<div class="why-chose">
+				<h2>Why Choose Us</h2>
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="mata-box">
+							<img src="images/meta-black.png" alt="">
+							<h3>Customer-Focused:</h3>
+							<p>We know every business is unique, so we tailor our strategies to fit your specific needs.
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="mata-box">
+							<img src="images/meta-black.png" alt="">
+							<h3>Result-Oriented:</h3>
+							<p>Our main goal is to increase your revenue and make your marketing efforts hassle-free.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="about">
+		<div class="container">
+			<h2>About Us</h2>
+			<div class="mission-container">
+				<div class="mission-box" style="background-image: url(images/mission-bg.png);">
+					<div class="mission-content">
+						<img src="images/mission.png" alt="">
+						<h3>Our Mission:</h3>
+						<p>We're here to empower businesses like yours with digital marketing solutions that are all
+							about data and delivering real results.</p>
+					</div>
+				</div>
+				<div class="mission-box" style="background-image: url(images/visson.png);">
+					<div class="mission-content">
+						<img src="images/mission.png" alt="">
+						<h3>Our Vision:</h3>
+						<p>To be the go-to digital marketing partner for startups and established businesses, recognized
+							for our commitment to excellence and measurable success.</p>
+					</div>
+				</div>
+				<div class="mission-box" style="background-image: url(images/journey.png);">
+					<div class="mission-content">
+						<img src="images/mission.png" alt="">
+						<h3>Our Journey</h3>
+						<p>Over the past 4 years, we've had the pleasure of working with over 60 clients across various
+							industries—including e-commerce, dermatology, and interior design. We're experts in crafting
+							customized paid advertising strategies that actually work</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="values">
+		<div class="container">
+			<div class="row dis-flex">
+				<div class="col-lg-7">
+					<div class="values-content">
+						<h2>Our Core Values: <img src="images/link.png" alt=""></h2>
+						<h3>Innovation:</h3>
+						<p>We stay ahead of the curve to provide you with cutting-edge marketing solutions.</p>
+						<h3>Integrity:</h3>
+						<p>Honesty and transparency are at the heart of everything we do. We're upfront and keep things
+							clear.</p>
+						<h3>Excellence:</h3>
+						<p>We're committed to delivering high-quality services that not only meet but exceed your
+							expectations.</p>
+					</div>
+				</div>
+				<div class="col-lg-5">
+					<div class="values-img">
+						<img src="images/values.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-logo">
+						<img src="images/logo.svg" alt="">
+						<p>Lorem ipsum dolor sit amet,
+							consectetur adipiscing elit.</p>
+						<ul>
+							<li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+							<li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-link">
+						<p class="theme-color">Headquarter</p>
+						<p>Digitalize Agency. Amphitheater
+							Parkway, Mountain View,
+							California, 54043, CA.</p>
+						<ul>
+							<li><a href="#"><i class="fa-solid fa-mobile-screen-button"></i>+123 456 789</a></li>
+							<li><a href="#"><i class="fa-solid fa-envelope"></i>mail@digital.ize</a></li>
+
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-link">
+						<p class="theme-color">Services</p>
+						<ul>
+							<li><a href="#">Digital Marketing</a></li>
+							<li><a href="#">SEO Booster</a></li>
+							<li><a href="#">Web Development</a></li>
+							<li><a href="#">Social Media</a></li>
+							<li><a href="#">Ecommerce</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-link">
+						<p class="theme-color">Links</p>
+						<ul>
+							<li><a href="#">Our Clients
+							<li><a href="#">Contact</a></li>
+							<li><a href="#">Help Center</a></li>
+							<li><a href="#">Career</a></li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+
+
+	<!-- jquary-cdn-link -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<!-- animation cdn lik -->
+	<script src="js/wow.min.js"></script>
+	<!-- main.js -->
+	<script src="js/main.js"></script>
+</body>
+
+</html>
