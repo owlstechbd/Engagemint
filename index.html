@@ -16,8 +16,8 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap"
 		rel="stylesheet">
-	<!-- Font awesome -->
-	<script src="https://kit.fontawesome.com/b2b7d27ef0.js" crossorigin="anonymous"></script>
+ <!-- fontawesome -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -35,19 +35,19 @@
 					<ul class="navbar-nav">
 
 						<li class="nav-item">
-							<a href="index.html">Home</a>
+							<a href="#hero">Home</a>
 						</li>
 
 						<li class="nav-item">
-							<a href="#skill">ABOUT US</a>
+							<a href="#about">ABOUT US</a>
 						</li>
 
 						<li class="nav-item">
-							<a href="#destianation-main">Portfolios</a>
+							<a href="#client">Our Clients</a>
 						</li>
 
 						<li class="nav-item">
-							<a href="#prefer-main">Services</a>
+							<a href="#service">Services</a>
 						</li>
 
 
@@ -56,7 +56,7 @@
 			</div>
 		</nav>
 	</section>
-	<section class="hero">
+	<section class="hero" id="hero">
 		<div class="container">
 			<div class="hero-tex">
 				<h1>Creative</h1>
@@ -87,7 +87,7 @@
 						loop 
 						playsinline 
 						webkit-playsinline>
-						<source src="images/hero-video.mp4" type="video/mp4" />
+						<source src="images/hero-video2.mp4" type="video/mp4" />
 						Your browser does not support the video tag.
 					  </video>
 					  <div class="play-button">
@@ -97,7 +97,7 @@
 				  
 					<div class="custom-video-container" style="display: none;">
 					  <video id="mainVideo" class="full-video" playsinline webkit-playsinline  >
-						<source src="images/hero-video.mp4" type="video/mp4" />
+						<source src="images/hero-video2.mp4" type="video/mp4" />
 						Your browser does not support the video tag.
 					  </video>
 					  
@@ -109,7 +109,7 @@
 		</div>
 	</section>
 
-	<section class="testmonail">
+	<section class="testmonail" id="client">
 		<div class="container">
 			<div class="testmonail-container">
 				<div class="test-left">
@@ -119,7 +119,7 @@
 						occaecat cupidatat non proident.</p>
 				</div>
 				<div class="test-right">
-					<div class="slider-container">
+					<div class="slider-container" id="slider-container">
 						<div class="slider">
 						  <div class="slide active">
 							<div class="testmonail-content">
@@ -154,7 +154,7 @@
 										loop 
 										playsinline 
 										webkit-playsinline>
-										<source src="images/hero-video.mp4" type="video/mp4" />
+										<source src="images/testmonail1.mp4" type="video/mp4" />
 										Your browser does not support the video tag.
 									  </video>
 									  <div class="testimonial-play-button">
@@ -164,7 +164,7 @@
 								  
 									<div class="testimonial-video-container">
 									  <video class="testimonial-full-video" playsinline webkit-playsinline>
-										<source src="images/hero-video.mp4" type="video/mp4" />
+										<source src="images/testmonail1.mp4" type="video/mp4" />
 										Your browser does not support the video tag.
 									  </video>
 									  
@@ -174,7 +174,128 @@
 								
 								<div class="test-person">
 									<img src="images/man1.png" alt="">
-									<p>Steven Smith</p>
+									<p>Borboleta Bags -</p><br>
+									<span>Based out of Thailand</span>
+									
+								</div>	
+							</div>
+						  </div>
+
+						  <div class="slide ">
+							<div class="testmonail-content">
+								<div class="quto">
+									<img src="images/quto.png" alt="">
+								</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing
+									elit, sed do eiusmod tempor incididunt ut labore et
+									dolore magna aliqua. Ut enim ad minim veniam, quis
+									nostrud exercitation ullamco laboris nisi ut aliquip ex
+									ea commodo consequat.</p>
+								<div class="test-person">
+									<img src="images/man1.png" alt="">
+									<p>Mike Lewis  - </p>
+									<span>Twitter</span>
+								</div>	
+							</div>
+						  </div>
+						  <div class="slide">
+							<div class="testmonail-content">
+								<div class="quto">
+									<img src="images/quto.png" alt="">
+								</div>
+
+
+								<div class="testimonial-video">
+									<div class="testimonial-video-thumbnail">
+									  <video 
+										class="testimonial-video-bg" 
+										muted 
+										autoplay 
+										loop 
+										playsinline 
+										webkit-playsinline>
+										<source src="images/testmonail2.mp4" type="video/mp4" />
+										Your browser does not support the video tag.
+									  </video>
+									  <div class="testimonial-play-button">
+										<img src="images/green-play.png" alt="Play Button" />
+									  </div>
+									</div>
+								  
+									<div class="testimonial-video-container">
+									  <video class="testimonial-full-video" playsinline webkit-playsinline>
+										<source src="images/testmonail2.mp4" type="video/mp4" />
+										Your browser does not support the video tag.
+									  </video>
+									  
+									</div>
+								  </div>
+
+								
+								<div class="test-person">
+									<img src="images/man1.png" alt="">
+									<p>Melanie Zahirović -</p><br>
+									<span>Owner - Melanie.ba</span>
+									
+								</div>	
+							</div>
+						  </div>
+						  <div class="slide ">
+							<div class="testmonail-content">
+								<div class="quto">
+									<img src="images/quto.png" alt="">
+								</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing
+									elit, sed do eiusmod tempor incididunt ut labore et
+									dolore magna aliqua. Ut enim ad minim veniam, quis
+									nostrud exercitation ullamco laboris nisi ut aliquip ex
+									ea commodo consequat.</p>
+								<div class="test-person">
+									<img src="images/man1.png" alt="">
+									<p>Mike Lewis  - </p>
+									<span>Twitter</span>
+								</div>	
+							</div>
+						  </div>
+
+						  <div class="slide">
+							<div class="testmonail-content">
+								<div class="quto">
+									<img src="images/quto.png" alt="">
+								</div>
+
+
+								<div class="testimonial-video">
+									<div class="testimonial-video-thumbnail">
+									  <video 
+										class="testimonial-video-bg" 
+										muted 
+										autoplay 
+										loop 
+										playsinline 
+										webkit-playsinline>
+										<source src="images/testmonail3.mp4" type="video/mp4" />
+										Your browser does not support the video tag.
+									  </video>
+									  <div class="testimonial-play-button">
+										<img src="images/green-play.png" alt="Play Button" />
+									  </div>
+									</div>
+								  
+									<div class="testimonial-video-container">
+									  <video class="testimonial-full-video" playsinline webkit-playsinline>
+										<source src="images/testmonail3.mp4" type="video/mp4" />
+										Your browser does not support the video tag.
+									  </video>
+									  
+									</div>
+								  </div>
+
+								
+								<div class="test-person">
+									<img src="images/man1.png" alt="">
+									<p>Devyani Pradhan</p><br>
+									<span>CEO - fitverse.ai</span>
 									
 								</div>	
 							</div>
@@ -202,6 +323,39 @@
 					<div class="partner-logo"><img src="images/logo-company/4.png" alt=""></div>
 					<div class="partner-logo"><img src="images/logo-company/5.png" alt=""></div>
 					<div class="partner-logo"><img src="images/logo-company/1.png" alt=""></div>
+					<!-- Add your logos here -->
+					<div class="partner-logo"><img src="images/logo-company/1.png" alt=""></div>
+					<div class="partner-logo"><img src="images/logo-company/2.png" alt=""></div>
+					<div class="partner-logo"><img src="images/logo-company/3.png" alt=""></div>
+					<div class="partner-logo"><img src="images/logo-company/4.png" alt=""></div>
+					<div class="partner-logo"><img src="images/logo-company/5.png" alt=""></div>
+					<div class="partner-logo"><img src="images/logo-company/1.png" alt=""></div>
+					<div class="partner-logo"><img src="images/logo-company/2.png" alt=""></div>
+					<div class="partner-logo"><img src="images/logo-company/4.png" alt=""></div>
+					<div class="partner-logo"><img src="images/logo-company/5.png" alt=""></div>
+					<div class="partner-logo"><img src="images/logo-company/1.png" alt=""></div>
+					<!-- Add your logos here -->
+					<div class="partner-logo"><img src="images/logo-company/1.png" alt=""></div>
+					<div class="partner-logo"><img src="images/logo-company/2.png" alt=""></div>
+					<div class="partner-logo"><img src="images/logo-company/3.png" alt=""></div>
+					<div class="partner-logo"><img src="images/logo-company/4.png" alt=""></div>
+					<div class="partner-logo"><img src="images/logo-company/5.png" alt=""></div>
+					<div class="partner-logo"><img src="images/logo-company/1.png" alt=""></div>
+					<div class="partner-logo"><img src="images/logo-company/2.png" alt=""></div>
+					<div class="partner-logo"><img src="images/logo-company/4.png" alt=""></div>
+					<div class="partner-logo"><img src="images/logo-company/5.png" alt=""></div>
+					<div class="partner-logo"><img src="images/logo-company/1.png" alt=""></div>
+					<!-- Add your logos here -->
+					<div class="partner-logo"><img src="images/logo-company/1.png" alt=""></div>
+					<div class="partner-logo"><img src="images/logo-company/2.png" alt=""></div>
+					<div class="partner-logo"><img src="images/logo-company/3.png" alt=""></div>
+					<div class="partner-logo"><img src="images/logo-company/4.png" alt=""></div>
+					<div class="partner-logo"><img src="images/logo-company/5.png" alt=""></div>
+					<div class="partner-logo"><img src="images/logo-company/1.png" alt=""></div>
+					<div class="partner-logo"><img src="images/logo-company/2.png" alt=""></div>
+					<div class="partner-logo"><img src="images/logo-company/4.png" alt=""></div>
+					<div class="partner-logo"><img src="images/logo-company/5.png" alt=""></div>
+					<div class="partner-logo"><img src="images/logo-company/1.png" alt=""></div>
 
 				</div>
 			</div>
@@ -216,7 +370,7 @@
 					<h2>Website</h2>
 				</div>
 				<div class="scrool-brand">
-					<h2>Socail Media</h2>
+					<h2>Social Media</h2>
 				</div>
 				<div class="scrool-brand">
 					<h2>Graphic Design</h2>
@@ -225,28 +379,7 @@
 					<h2>Branding</h2>
 				</div>
 				<div class="scrool-brand">
-					<h2>Socail Media</h2>
-				</div>
-				<div class="scrool-brand">
-					<h2>Graphic Design</h2>
-				</div>
-				<div class="scrool-brand">
-					<h2>Branding</h2>
-				</div>
-				<div class="scrool-brand">
-					<h2>Website</h2>
-				</div>
-				<div class="scrool-brand">
-					<h2>Socail Media</h2>
-				</div>
-				<div class="scrool-brand">
-					<h2>Graphic Design</h2>
-				</div>
-				<div class="scrool-brand">
-					<h2>Branding</h2>
-				</div>
-				<div class="scrool-brand">
-					<h2>Socail Media</h2>
+					<h2>Social Media</h2>
 				</div>
 				<div class="scrool-brand">
 					<h2>Graphic Design</h2>
@@ -258,7 +391,7 @@
 					<h2>Website</h2>
 				</div>
 				<div class="scrool-brand">
-					<h2>Socail Media</h2>
+					<h2>Social Media</h2>
 				</div>
 				<div class="scrool-brand">
 					<h2>Graphic Design</h2>
@@ -267,7 +400,91 @@
 					<h2>Branding</h2>
 				</div>
 				<div class="scrool-brand">
-					<h2>Socail Media</h2>
+					<h2>Social Media</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Graphic Design</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Branding</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Website</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Social Media</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Graphic Design</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Branding</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Social Media</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Graphic Design</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Branding</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Website</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Social Media</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Graphic Design</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Branding</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Social Media</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Graphic Design</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Branding</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Website</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Social Media</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Graphic Design</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Branding</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Social Media</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Graphic Design</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Branding</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Website</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Social Media</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Graphic Design</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Branding</h2>
+				</div>
+				<div class="scrool-brand">
+					<h2>Social Media</h2>
 				</div>
 				<div class="scrool-brand">
 					<h2>Graphic Design</h2>
@@ -286,7 +503,7 @@
 		</div>
 	</section>
 
-	<section class="service">
+	<section class="service" id="service">
 		<div class="container">
 			<div class="service-title">
 				<div class="left-title">
@@ -294,9 +511,7 @@
 				</div>
 				<div class="right-title">
 					<img src="images/leaf.png" alt="">
-					<p>Duis aute irure dolor in reprehenderit in
-						voluptate velit esse cillum dolore eu fugiat
-						nulla pariatur.</p>
+					<p>Transform your business with innovative solutions that drive real results and help you stand out in the digital landscape.</p>
 				</div>
 			</div>
 			<div class="row">
@@ -304,8 +519,7 @@
 					<div class="service-box s-border1">
 						<img src="images/meta.png" alt="">
 						<h3>Meta Advertising (Facebook & Instagram)</h3>
-						<p>Want to reach your ideal customers where they hang out? We'll create eye-catching ads on
-							Facebook and Instagram that engage and convert.</p>
+						<p>Want to reach your ideal customers where they hang out? We'll create eye-catching ads on Facebook and Instagram that engage and convert.</p>
 
 					</div>
 				</div>
@@ -314,63 +528,33 @@
 						<img src="images/google.png" alt="">
 						<h3>Google<br>
 							Advertising</h3>
-						<p>Lorem ipsum dolor sit amet,
-							consectetur adipiscing elit. Mauris
-							tempus nisl vitae magna pulvinar
-							laoreet.</p>
+						<p>Ready to be at the top of search results? Our keyword strategies get you noticed by people actively searching for what you offer.</p>
 
 					</div>
 				</div>
 				<div class="col-lg-3 mar-b-30">
 					<div class="service-box s-border2">
 						<img src="images/amazon.png" alt="">
-						<h3>Amazon<br>
-							Advertising</h3>
-						<p>Lorem ipsum dolor sit amet,
-							consectetur adipiscing elit. Mauris
-							tempus nisl vitae magna pulvinar
-							laoreet.</p>
+						<h3>TikTok <br> Advertising</h3>
+						<p>Want to go viral on the platform that’s taking the world by storm? We create fun, trendy, and engaging TikTok ads that captivate your audience and drive results.</p>
 
 					</div>
 				</div>
 				<div class="col-lg-3 mar-b-30">
 					<div class="service-box s-border2">
 						<img src="images/amazon.png" alt="">
-						<h3>Branding</h3>
-						<p>Lorem ipsum dolor sit amet,
-							consectetur adipiscing elit. Mauris
-							tempus nisl vitae magna pulvinar
-							laoreet.</p>
+						<h3>AI Agents</h3>
+						<p>Looking to boost your business's productivity with cutting-edge technology? Our AI agents streamline operations, automate repetitive tasks, and provide smart solutions to help your business thrive.</p>
 
 					</div>
 				</div>
 
 			</div>
-			<div class="why-chose">
-				<h2>Why Choose Us</h2>
-				<div class="row">
-					<div class="col-lg-6">
-						<div class="mata-box">
-							<img src="images/meta-black.png" alt="">
-							<h3>Customer-Focused:</h3>
-							<p>We know every business is unique, so we tailor our strategies to fit your specific needs.
-							</p>
-						</div>
-					</div>
-					<div class="col-lg-6">
-						<div class="mata-box">
-							<img src="images/meta-black.png" alt="">
-							<h3>Result-Oriented:</h3>
-							<p>Our main goal is to increase your revenue and make your marketing efforts hassle-free.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
+
 		</div>
 	</section>
 
-	<section class="about">
+	<section class="about" id="about">
 		<div class="container">
 			<h2>About Us</h2>
 			<div class="mission-container">
@@ -433,8 +617,7 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="footer-logo">
 						<img src="images/logo.svg" alt="">
-						<p>Lorem ipsum dolor sit amet,
-							consectetur adipiscing elit.</p>
+						<p>Innovating Engagement, Driving Growth.</p>
 						<ul>
 							<li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
 							<li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
@@ -450,8 +633,8 @@
 							Parkway, Mountain View,
 							California, 54043, CA.</p>
 						<ul>
-							<li><a href="#"><i class="fa-solid fa-mobile-screen-button"></i>+123 456 789</a></li>
-							<li><a href="#"><i class="fa-solid fa-envelope"></i>mail@digital.ize</a></li>
+							<li><a href="tel:+91 8126995776"><i class="fa-solid fa-mobile-screen-button"></i>+91 8126995776</a></li>
+							<li><a href="mailto:pranav@engagemintdigital.com"><i class="fa-solid fa-envelope"></i>pranav@engagemintdigital.com</a></li>
 
 						</ul>
 					</div>

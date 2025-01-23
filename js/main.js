@@ -58,38 +58,66 @@ function togglePlayPause() {
 
 
 //slider
-
 const slides = document.querySelectorAll('.slide');
   const prevBtn = document.getElementById('prev');
   const nextBtn = document.getElementById('next');
+  const sliderContainer = document.getElementById('slider-container');
   let currentIndex = 0;
+  let autoSlideInterval;
 
+  // Function to show a specific slide
   function showSlide(index, direction) {
     slides[currentIndex].classList.remove('active');
-    slides[currentIndex].classList.add('fade-out');
 
+    // Direction-specific animation
+    if (direction === 'left-to-right') {
+      slides[currentIndex].style.transform = 'translateX(100%)';
+    } else if (direction === 'right-to-left') {
+      slides[currentIndex].style.transform = 'translateX(-100%)';
+    }
+
+    // Update the current index
     currentIndex = index;
 
-    slides[currentIndex].classList.remove('fade-out');
+    // Reset the position and activate the new slide
+    slides[currentIndex].style.transform = 'translateX(0)';
     slides[currentIndex].classList.add('active');
-
-    if (direction === 'right-to-left') {
-      slides[currentIndex].style.transform = 'translateX(100%)';
-      requestAnimationFrame(() => {
-        slides[currentIndex].style.transform = 'translateX(0)';
-      });
-    }
   }
 
+  // Auto-slide function
+  function startAutoSlide() {
+    autoSlideInterval = setInterval(() => {
+      const newIndex = (currentIndex + 1) % slides.length; // Loop to the next slide
+      showSlide(newIndex, 'left-to-right');
+    }, 3000); // Slide every 3 seconds
+  }
+
+  // Stop auto-slide
+  function stopAutoSlide() {
+    clearInterval(autoSlideInterval);
+  }
+
+  // Previous button click event
   prevBtn.addEventListener('click', () => {
     const newIndex = (currentIndex - 1 + slides.length) % slides.length;
     showSlide(newIndex, 'right-to-left');
   });
 
+  // Next button click event
   nextBtn.addEventListener('click', () => {
     const newIndex = (currentIndex + 1) % slides.length;
     showSlide(newIndex, 'left-to-right');
   });
+
+  // Pause auto-slide on hover
+  sliderContainer.addEventListener('mouseover', stopAutoSlide);
+
+  // Resume auto-slide on mouse out
+  sliderContainer.addEventListener('mouseout', startAutoSlide);
+
+  // Start the auto-slide on page load
+  startAutoSlide();
+
 
 
 //testmonail-video
@@ -102,29 +130,35 @@ testimonialVideos.forEach((videoSection) => {
   const thumbnail = videoSection.querySelector('.testimonial-video-thumbnail');
   const fullVideoContainer = videoSection.querySelector('.testimonial-video-container');
   const fullVideo = videoSection.querySelector('.testimonial-full-video');
-  const playPauseBtn = videoSection.querySelector('.testimonial-play-pause-btn');
+  const playPauseBtn = videoSection.querySelector('.testimonial-play-button img'); // Update to select the play button
 
   // Play the full video when the thumbnail is clicked
   thumbnail.addEventListener('click', () => {
-    thumbnail.style.display = 'none'; // Hide the thumbnail
-    fullVideoContainer.style.display = 'block'; // Show the full video container
+    // Hide the thumbnail and show the full video container
+    thumbnail.style.display = 'none';
+    fullVideoContainer.style.display = 'block';
+    
+    // Play the full video
     fullVideo.play().catch((error) => {
       console.error('Video playback error:', error);
     });
-    playPauseBtn.textContent = 'Pause'; // Update button text
+
+    // Update button text (if needed)
+    playPauseBtn.setAttribute('src', 'images/pause.png'); // Update play/pause button image if needed
   });
 
-  // Toggle play/pause functionality
+  // Toggle play/pause functionality on play button click
   playPauseBtn.addEventListener('click', () => {
     if (fullVideo.paused) {
       fullVideo.play();
-      playPauseBtn.textContent = 'Pause';
+      playPauseBtn.setAttribute('src', 'images/pause.png'); // Change to pause icon
     } else {
       fullVideo.pause();
-      playPauseBtn.textContent = 'Play';
+      playPauseBtn.setAttribute('src', 'images/green-play.png'); // Change to play icon
     }
   });
 });
+
 
 
 
