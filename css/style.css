@@ -754,7 +754,6 @@ footer p{
 	font-size: 20px;
 	line-height: 20px;
 	margin: 0;
-	margin-left: 20px;
   }
   .test-person span{
 	font-size: 16px;
@@ -868,4 +867,7 @@ footer p{
   .testimonial-play-pause-btn:hover {
 	background-color: #f0f0f0;
   }
+  
+
+
   

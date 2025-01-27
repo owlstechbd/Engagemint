@@ -124,13 +124,27 @@ const slides = document.querySelectorAll('.slide');
 
 
 // Select all testimonial video sections
+// Select all testimonial video sections
 const testimonialVideos = document.querySelectorAll('.testimonial-video');
 
 testimonialVideos.forEach((videoSection) => {
   const thumbnail = videoSection.querySelector('.testimonial-video-thumbnail');
   const fullVideoContainer = videoSection.querySelector('.testimonial-video-container');
   const fullVideo = videoSection.querySelector('.testimonial-full-video');
-  const playPauseBtn = videoSection.querySelector('.testimonial-play-button img'); // Update to select the play button
+  const playPauseBtn = videoSection.querySelector('.testimonial-play-button img'); // Play/pause button image
+  const pushButton = document.createElement('img'); // Create push button
+
+  // Configure push button styles and attributes
+  pushButton.src = 'images/green-play.png'; // Set initial play button image
+  pushButton.className = 'testimonial-push-button'; // Add a class for styling
+  pushButton.style.position = 'absolute';
+  pushButton.style.top = '35%';
+  pushButton.style.right = '45%';
+  pushButton.style.width = '60px';
+  pushButton.style.height = '60px';
+  pushButton.style.cursor = 'pointer';
+  pushButton.style.display = 'none'; // Initially hidden
+  fullVideoContainer.appendChild(pushButton); // Append push button to the video container
 
   // Play the full video when the thumbnail is clicked
   thumbnail.addEventListener('click', () => {
@@ -143,8 +157,25 @@ testimonialVideos.forEach((videoSection) => {
       console.error('Video playback error:', error);
     });
 
-    // Update button text (if needed)
-    playPauseBtn.setAttribute('src', 'images/pause.png'); // Update play/pause button image if needed
+    // Update button icons
+    playPauseBtn.setAttribute('src', 'images/pause.png');
+    pushButton.src = 'images/pause.png'; // Change push button to pause icon
+    pushButton.style.display = 'block'; // Show push button
+  });
+
+  // Add functionality for the push button
+  pushButton.addEventListener('click', () => {
+    if (fullVideo.paused) {
+      // Play the video
+      fullVideo.play();
+      playPauseBtn.setAttribute('src', 'images/pause.png'); // Update main play button icon
+      pushButton.src = 'images/pause.png'; // Update push button to pause icon
+    } else {
+      // Pause the video
+      fullVideo.pause();
+      playPauseBtn.setAttribute('src', 'images/green-play.png'); // Update main play button icon
+      pushButton.src = 'images/green-play.png'; // Update push button to play icon
+    }
   });
 
   // Toggle play/pause functionality on play button click
@@ -152,12 +183,23 @@ testimonialVideos.forEach((videoSection) => {
     if (fullVideo.paused) {
       fullVideo.play();
       playPauseBtn.setAttribute('src', 'images/pause.png'); // Change to pause icon
+      pushButton.src = 'images/pause.png'; // Update push button to pause icon
+      pushButton.style.display = 'block'; // Ensure push button is visible
     } else {
       fullVideo.pause();
       playPauseBtn.setAttribute('src', 'images/green-play.png'); // Change to play icon
+      pushButton.src = 'images/green-play.png'; // Update push button to play icon
     }
   });
+
+  // Handle video ended event
+  fullVideo.addEventListener('ended', () => {
+    playPauseBtn.setAttribute('src', 'images/green-play.png'); // Reset play button icon
+    pushButton.src = 'images/green-play.png'; // Reset push button icon to play
+    pushButton.style.display = 'none'; // Hide push button when the video ends
+  });
 });
+
 
 
 
