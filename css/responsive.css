@@ -181,18 +181,7 @@
     .hero-img {
         width: 100%;
     }
-    .scrool-brand {
-        min-width: 40%;
-        width:40%;
-        text-align: center;
-    }
-    .service-brand h2 {
-        font-size: 25px;
-        color: #edecec;
-    }
-    .service-going{
-        padding: 60px 0;
-    }
+    
     .left-title h2{
         font-size: 50px;
     }
@@ -231,6 +220,12 @@
         width: 50%;
         max-width: 50%;
     }
+    .layer-bluer{
+        display: none;
+    }
+    .right-bluer{
+        display: none;
+    }
     
 }
 @media screen and (max-width: 485px){
@@ -252,14 +247,30 @@
         margin-bottom: 337px;
     }
     
-    .service-brand h2 {
-        font-size: 20px;
+    
+    .layer-bluer{
+        display: none;
+    }
+    .right-bluer{
+        display: none;
+    }
+    .service-brand {
+        animation: Servicescroll 90s linear infinite;
+    }
+    .scrool-brand h2 {
+        font-size: 48px;
         color: #edecec;
     }
 }
 @media screen and (max-width: 448px){
     .hero-video{
         top: 32%;
+    }
+    .layer-bluer{
+        display: none;
+    }
+    .right-bluer{
+        display: none;
     }
     .hero-video {
         left: 43%;

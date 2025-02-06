@@ -366,16 +366,10 @@ p {
 	
 }
 
-.carousel-track {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	animation: scroll 20s linear infinite;
-}
 
-.service-brand {
-	animation: Servicescroll 8s linear infinite;
-}
+
+  
+
 
 .partner-logo {
 	min-width: 200px;
@@ -396,6 +390,35 @@ p {
 	margin: 0 auto;
 }
 
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden; /* Ensures that only the visible logos are shown */
+}
+
+.carousel-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 20s linear infinite; /* Adjust the speed here */
+}
+.service-brand {
+	animation: Servicescroll 60s linear infinite;
+}
+.partner-logo {
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partner-logo img {
+    width: 100%;
+    height: auto;
+    max-width: 150px; /* Adjust based on your needs */
+}
+
+
+
 @media (max-width: 768px) {
 	.partner-logo {
 		min-width: 120px;
@@ -407,6 +430,9 @@ p {
 		width: auto;
 	}
 }
+
+
+
 
 /* Infinite Scroll Animation */
 @keyframes scroll {

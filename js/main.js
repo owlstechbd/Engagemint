@@ -200,6 +200,25 @@ testimonialVideos.forEach((videoSection) => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const carouselTrack = document.querySelector('.carousel-track');
+  const logos = document.querySelectorAll('.partner-logo');
+
+  // Clone the logos to ensure the infinite loop effect
+  logos.forEach(logo => {
+      const clone = logo.cloneNode(true);
+      carouselTrack.appendChild(clone);
+  });
+
+  // Optionally adjust the scroll speed based on the number of logos
+  const totalLogos = logos.length * 2; // Including the clones
+  const animationDuration = totalLogos * 2; // Adjust speed by duration
+  carouselTrack.style.animationDuration = `${animationDuration}s`;
+});
+
+
+
+
 
 
 
