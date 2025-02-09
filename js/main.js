@@ -204,20 +204,26 @@ testimonialVideos.forEach((videoSection) => {
 document.addEventListener("DOMContentLoaded", function () {
   const carouselTrack = document.querySelector('.carousel-track');
   const logos = document.querySelectorAll('.partner-logo');
+  const totalWidth = carouselTrack.scrollWidth / 2; // Total scroll width (cloned once)
 
-  // Clone logos to create a continuous effect
+  let currentPosition = 0;
+
+  function smoothScroll() {
+      currentPosition -= 1; // Adjust the speed by changing this value
+      if (currentPosition <= -totalWidth) {
+          currentPosition = 0;
+      }
+      carouselTrack.style.transform = `translateX(${currentPosition}px)`;
+      requestAnimationFrame(smoothScroll);
+  }
+
+  // Clone the logos to create an infinite effect
   logos.forEach(logo => {
       const clone = logo.cloneNode(true);
       carouselTrack.appendChild(clone);
   });
 
-  // Ensure the animation resets seamlessly on iOS
-  carouselTrack.addEventListener('animationiteration', () => {
-      carouselTrack.style.animation = 'none';
-      requestAnimationFrame(() => {
-          carouselTrack.style.animation = 'scroll 30s linear infinite';
-      });
-  });
+  smoothScroll(); // Start the scroll animation
 });
 
 

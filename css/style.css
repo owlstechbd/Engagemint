@@ -399,7 +399,7 @@ p {
 .carousel-track {
     display: flex;
     width: max-content;
-    animation: scroll 200s linear infinite; /* Adjust the speed here */
+    transition: transform 0.1s linear;
 }
 .service-brand {
 	animation: Servicescroll 60s linear infinite;
@@ -434,16 +434,7 @@ p {
 
 
 
-/* Infinite Scroll Animation */
-@keyframes scroll {
-	0% {
-		transform: translate3d(0, 0, 0);
-	}
 
-	100% {
-		transform: translate3d(-100%, 0, 0);
-	}
-}
 
 @keyframes Servicescroll {
 	0% {
